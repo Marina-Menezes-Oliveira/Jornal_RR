@@ -30,5 +30,6 @@ o Javascript
   <img width="408" alt="image" src="https://github.com/Marina-Menezes-Oliveira/Jornal_RR/assets/146383702/854884a2-7072-46e5-9af3-42ad92a79292">
   <img width="409" alt="image" src="https://github.com/Marina-Menezes-Oliveira/Jornal_RR/assets/146383702/5d9f62c4-3b0d-4c16-b2da-582844a57833">
 
+https://marina-menezes-oliveira.github.io/Jornal_RR/
 
 
