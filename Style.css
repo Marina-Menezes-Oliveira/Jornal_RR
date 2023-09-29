@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #E8D18E;
+    font-family: 'Abhaya Libre', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #11091A;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #2f2f4d;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #E8D18E;    
+    border-radius: 5px;         
+  }
+
+header{
+    background-color: #2f2f4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_horoscopo{
+    height: 82.4vh;
+}
+
+.main-signos{
+    height: 82.4vh;
+}
+
+footer{
+    background-color: #2f2f4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#textofooter{
+    flex: 1;
+    text-align: center;
+}
+
+#final{
+    width: 40px;
+}
+
+.Title-default{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 5rem;
+}
+
+.Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.img-default{
+    border-radius: 10px;
+    width: 22vw;
+    height: 45vh;
+}
+
+/* Header */
+#logo-header{
+    width: 250px;
+}
+
+/* Menu */
+#menu {
+    z-index: 2;
+}
+  
+#menu-bar{
+    width: 30px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+  
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: #E8D18E;
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+  
+#bar1{
+    transform: translateY(-4px);
+}
+  
+#bar3{
+    transform: translateY(4px);
+}
+  
+.nav{
+    transition: 0.3s ease;
+    display: none;
+}
+  
+.nav ul{
+    padding: 0 22px;
+}
+  
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+  
+.nav li a {
+    color: #E8D18E;
+    font-size: 25px;
+    text-decoration: none;
+}
+  
+.nav li a:hover {
+    font-weight: bold;
+}
+  
+.menu-bg,
+#menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+  
+.menu-bg {
+    z-index: 1;
+    width: 30px;
+    height: 20px;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #2f2f4d, #2f2f4d);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+  
+.change {
+    display: block;
+}
+  
+.change .bar {
+    background-color: #E8D18E;
+}
+  
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+  
+.change #bar2 {
+    opacity: 0;
+}
+  
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+  
+.change-bg {
+    width: 520px;
+    height: 470px;
+    transform: translate(-60%, -30%);
+}
+
+
+/* index */
+
+#title-manchetes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.noticias-principais{
+    display: flex;
+    flex-direction: column;
+}
+
+#Manchetes{
+    display: flex;
+}
+
+#Manchetes > h1{
+    padding-top: 3vh;
+}
+
+#img-manchetes{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.line1, .line2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    background-color: #E8D18E;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.line1{
+    margin-top: 3vw;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 7vh;
+    margin-bottom: 5rem;
+}
+
+.img-linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 10px;
+}
+
+.noticia-home{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 35vh;
+    text-align: justify;
+}
+
+.noticia-home a{
+    width: 35vh;
+    height: 35vh;
+}
+
+
+/* Notícias */
+
+.noticia{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.noticia > p{
+    line-height: 25px;
+    text-align: justify;
+} 
+
+.noticia > div > p{
+    line-height: 25px;
+    text-align: justify;
+} 
+
+.titulo{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    color: #E8D18E;
+}
+
+.imagens{
+    border-radius: 10px;
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.text-noticia{
+    font-size: 18px;
+    width: 450px;
+    color: #E8D18E;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+iframe{
+    height: 50vh;
+    width: 1000px;
+}
+
+/* Gráficos e legendas */
+
+div.legendas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.legendas img{
+    width:500px;
+}
+
+.legendas p{
+    display: flex;
+    text-align: justify;
+    width:550px;
+}
+
+.graficos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Horóscopo */
+
+#title-signo{
+    font-size: 40px;
+}
+
+.signos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.signos > a{
+    text-decoration: none;
+}
+
+.signos > a:hover {
+    font-weight: bold;
+    color: #626970;
+}
+
+.signos img{
+    width: 197px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+
+.signos img:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.09);
+}
+
+.horoscopo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Signos */
+
+#pg-signos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#pg-signos > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pg-signos > div img{
+    width: 350px;
+}
+
+#pg-signos > div p{
+    width: 400px;
+}
+
+#pg-signos > div h1{
+    font-size: 40px;
+}
+
+/* Cardápio */
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.rec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.rec img{
+    width: 400px;
+}
+
+.categorias img{
+    width: 200px;
+}
+
+.corpo a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.titulo{
+    background-image: url(./Assets/Receitas/back.svg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.titulo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 20px;
+}
+
+.titulo2 p{
+    font-size: 20px;
+}
+
+
+.center{
+    background-color: #2f2f4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#cafe{
+    padding-top: 20px;
+}
+
+/* Receitas */
+
+.title-receita{
+    margin-top: 20px;
+    font-size: 40px;
+    color: #E8D18E;
+}
+
+.corpo img{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+
+.corpo img:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.05);
+}
+
+.conteudo{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+
+.h2-receita{
+    font-size: 35px;
+    color: #E8D18E;
+}
+
+.imagens{
+    width: 450px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    margin-bottom: 50px;
+    width: 800px;
+}
+
+#main-receitas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-receitas div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#main-receitas div ul{
+    list-style: none;
+}
+
+.ingredientes{
+    width: 350px;
+    word-wrap: break-word;
+}
+
+.preparo{
+    width: 400px;
+}
+
+li{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.requisitos{
+    width: 500px;
+}
+
+.title-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Poemas */
+
+.poema{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.poema a {
+    text-decoration: none;
+}
+
+.poema a:hover{
+    color: #626970;
+    font-weight: bold;
+}
+
+.estrofe {
+    text-align: justify;
+    padding: 0.5rem;
+    width: 15vw;
+}
+
+.p-final{
+    margin-bottom: 2rem;
+}
+
+/* Artes */
+
+.art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    text-align: center;
+}
+
+.img{
+    width: 300px;
+}
+
+.obras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.processo{
+    width: 1000px;
+    text-align: center;
+}
